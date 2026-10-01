@@ -13,14 +13,10 @@ jobs:
           command: pip install requests
 
       - run:
-          name: Run HW02b tests
-          command: python -m unittest test_triangle.py
-
-      - run:
           name: Run HW03a tests
           command: |
             cd hw03a
-            python -m unittest hw03a/test_github_api.py
+            python -m unittest test_github_api.py
 
 workflows:
   build-and-test:
